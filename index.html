@@ -3,15 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vesak Card - SASIYA PROJECT</title>
-  <link rel="stylesheet" href="style.css">
+  <title>සුබ වෙසක් මංගල්‍යක් වේවා</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top, #ffe8c3, #ffcd96);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      position: relative;
+    }
+
+    .frame {
+      border: 10px double #ffd700;
+      padding: 10px;
+      box-shadow: 0 0 30px #ffcc00;
+      border-radius: 20px;
+      background: white;
+      max-width: 90%;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 15px;
+      display: block;
+    }
+
+    h1 {
+      color: #b30000;
+      text-shadow: 2px 2px #ffcccc;
+      margin-top: 20px;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .watermark {
+      position: absolute;
+      bottom: 10px;
+      right: 15px;
+      font-size: 12px;
+      color: #555;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
-  <div class="card">
-    <div class="buddha"></div>
-    <h1>SASIYA HKZ<br>NEW PROJECT</h1>
-    <p class="message">සුභ වෙසක් මංගල්‍යක් වේවා!</p>
-    <div class="watermark">SASIYA PROJECT V1</div>
+
+  <div class="frame">
+    <img src="https://files.catbox.moe/usj6ri.jpg" alt="Vesak Image">
+    <h1>සුබ වෙසක් මංගල්‍යක් වේවා !</h1>
   </div>
+
+  <div class="watermark">SASIYA NEW PROJECT V1</div>
+
 </body>
 </html>
